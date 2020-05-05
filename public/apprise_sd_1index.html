@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Style the header */
+    header {
+      background-color: darkblue;
+      padding: 5px;
+      text-align: left;
+      font-size: 20px;
+      color: white;
+    }
+
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+      float: left;
+      width: 30%;
+      height: 700px; /* only for demonstration, should be removed */
+      background: #ccc;
+      padding: 20px;
+    }
+
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    article {
+      float: left;
+      padding: 20px;
+      width: 70%;
+      background-color: #f1f1f1;
+      height: 700px; /* only for demonstration, should be removed */
+    }
+
+    /* Style the footer */
+    footer {
+      background-color: #777;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+      nav, article {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<header>
+  <h2>Apprise Service Desk Portal</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="https://geophy.atlassian.net/issues/?filter=10200">All bugs</a></li>
+      <li><a href="https://geophy.atlassian.net/browse/AS-84?filter=10201">All bugs in review</a></li>
+      <li><a href="https://geophy.atlassian.net/browse/AS-128?filter=10202">All features</a></li>
+      <li><a href="https://geophy.atlassian.net/browse/AS-120?filter=10203">All bugs reported by Brad</a></li>
+      <li><a href="https://geophy.atlassian.net/browse/AS-73?filter=10204">All bugs in review by Brad</a></li>
+      <li><a href="https://geophy.atlassian.net/browse/AS-128?filter=10202">All features</a></li>
+    </ul>
+  </nav>
+
+  <article>
+
+      <body>
+      <h2>Please choose type of the issue you want to  report </h2>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+        body {font-family: Arial;}
+
+        /* Style the tab */
+        .tab {
+          overflow: hidden;
+          border: 1px solid #ccc;
+          background-color: #f1f1f1;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+          background-color: inherit;
+          float: left;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          padding: 14px 16px;
+          transition: 0.3s;
+          font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+          background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+          background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+          display: none;
+          padding: 6px 12px;
+          border: 1px solid #ccc;
+          border-top: none;
+        }
+
+        /* Style the close button */
+        .topright {
+          float: right;
+          cursor: pointer;
+          font-size: 28px;
+        }
+
+        .topright:hover {color: red;}
+      </style>
+      </head>
+      <body>
+
+
+
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Bugs/Errors</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">Improvements/Suggestions</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Questions</button>
+      </div>
+
+      <div id="London" class="tabcontent">
+        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+        <li><a href="https://geophy.atlassian.net/servicedesk/customer/portal/2/group/3/create/14">General</a></li>
+        <li><a href="https://geophy.atlassian.net/servicedesk/customer/portal/2/group/3/create/35">General map</a></li>
+        <li><a href="https://geophy.atlassian.net/servicedesk/customer/portal/2/group/3/create/34">PR-Overview</a></li>
+        <li><a href="https://geophy.atlassian.net/servicedesk/customer/portal/2/group/3/create/36">PR-Detail</a></li>
+        <li><a href="https://geophy.atlassian.net/servicedesk/customer/portal/2/group/3/create/37">PR-Data Sources</a></li>
+        <li><a href="https://geophy.atlassian.net/servicedesk/customer/portal/2/group/3/create/38">PR-Sales</a></li>
+        <li><a href="https://geophy.atlassian.net/servicedesk/customer/portal/2/group/3/create/39">PR-Units</a></li>
+        <li><a href="https://geophy.atlassian.net/servicedesk/customer/portal/2/group/3/create/40">PR-P&Ls</a></li>
+        <li><a href="https://geophy.atlassian.net/servicedesk/customer/portal/2/group/3/create/41">PR-Taxes</a></li>
+
+        <li><a href="https://geophy.atlassian.net/servicedesk/customer/portal/2/group/3/create/42">PR-Photos/Files</a></li>
+        <li><a href="https://geophy.atlassian.net/servicedesk/customer/portal/2/group/3/create/43">PR-Comments</a></li>
+        <li><a href="https://geophy.atlassian.net/servicedesk/customer/portal/2/group/3/create/44">A-Overview</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-132?filter=10200">A-Basic Info</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-84?filter=10201">A-Sales Grid Logic</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-128?filter=10202">A-Rent Grid Logic</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-120?filter=10203">A-Sales Comps</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-73?filter=10204">A-Pro Forma Tax</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-128?filter=10202">A-Ad Valorem</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-132?filter=10200">A-Tax Comps</a></li>
+        <li><a href="https://geophy.atlassian.net/servicedesk/customer/portal/2/group/3/create/54">A-Rent Comps</a></li>
+        <li><a href="https://geophy.atlassian.net/servicedesk/customer/portal/2/group/3/create/55">A-Unit Mix</a></li>
+        <li><a href="https://geophy.atlassian.net/servicedesk/customer/portal/2/group/3/create/56">A-Operating Comps</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-73?filter=10204">A-Operating History</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-128?filter=10202">A-Operating Statements</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-132?filter=10200">A-Operating Summaries</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-84?filter=10201">A-Pro Forma</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-128?filter=10202">A-AVM</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-120?filter=10203">A-Reconciliation</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-73?filter=10204">A-Insurable Value</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-128?filter=10202">A-Misc</a></li>
+      </div>
+
+      <div id="Paris" class="tabcontent">
+        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+        <li><a href="https://geophy.atlassian.net/browse/AS-132?filter=10200">General</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-84?filter=10201">General map</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-128?filter=10202">PR-Overview</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-120?filter=10203">PR-Detail</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-73?filter=10204">PR-Data Sources</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-128?filter=10202">PR-Sales</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-132?filter=10200">PR-Units</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-84?filter=10201">PR-P&Ls</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-128?filter=10202">PR-Taxes</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-120?filter=10203">PR-Photos/Files</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-73?filter=10204">PR-Comments</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-128?filter=10202">A-Overview</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-132?filter=10200">A-Basic Info</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-84?filter=10201">A-Sales Grid Logic</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-128?filter=10202">A-Rent Grid Logic</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-120?filter=10203">A-Sales Comps</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-73?filter=10204">A-Pro Forma Tax</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-128?filter=10202">A-Ad Valorem</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-132?filter=10200">A-Tax Comps</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-84?filter=10201">A-Rent Comps</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-128?filter=10202">A-Unit Mix</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-120?filter=10203">A-Operating Comps</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-73?filter=10204">A-Operating History</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-128?filter=10202">A-Operating Statements</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-132?filter=10200">A-Operating Summaries</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-84?filter=10201">A-Pro Forma</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-128?filter=10202">A-AVM</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-120?filter=10203">A-Reconciliation</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-73?filter=10204">A-Insurable Value</a></li>
+        <li><a href="https://geophy.atlassian.net/browse/AS-128?filter=10202">A-Misc</a></li>
+      </div>
+
+      <div id="Tokyo" class="tabcontent">
+        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+        <li><a href="https://geophy.atlassian.net/browse/AS-128?filter=10202">Please ask here</a></li>
+      </div>
+
+      <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+      </script>
+
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
+
